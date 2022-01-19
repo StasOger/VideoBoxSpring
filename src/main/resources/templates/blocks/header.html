@@ -1,0 +1,98 @@
+<div th:fragment="header" >
+  <style type="text/css">
+   a {
+    text-decoration: none;
+    color: #696969; /* Цвет обычной ссылки */
+   }
+   a:hover {
+    text-decoration: none;
+    color: #2E8B57; /* Цвет ссылки при наведении на нее курсора мыши */
+    transition: color 0.5s;
+   }
+        button[name="profileHeader"] {
+        border: none;
+        width: 104px;
+        border-radius: 6px;
+        padding: 8px ;
+        background: #4caf50;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #696969;
+      }
+        button[name="profileHeader"]:hover {
+        background: #2E8B57;
+        transition: background 0.5s;
+        width: 104px;
+      }
+
+
+        button[name="carSale"] {
+        border: 1px solid #4caf50;
+        border-radius: 6px;
+        padding: 8px 21px;
+        background: #303030;
+        cursor: pointer;
+        font-weight: bold;
+        color: #4caf50;
+      }
+        button[name="carSale"]:hover {
+        background: #2E8B57;
+        border: 1px solid #2E8B57;
+        color: #696969;
+        transition: background 0.5s;
+
+      }
+        d {
+        padding: 0 20px 20px 20px;
+        width: 600px;
+      }
+
+  </style>
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+
+
+              <input type="file" name="file" id="file" class="input-file">
+              <label for="file" class="btn btn-tertiary js-labelFile">
+                <i class="icon fa fa-check"></i>
+                <span class="js-fileName">Загрузить файл</span>
+              </label>
+
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+
+
+
+
+
+
+
+
+
