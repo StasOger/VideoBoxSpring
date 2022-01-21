@@ -6,49 +6,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
 </head>
-<style type="text/css">
-
-
-
-</style>
 <header th:insert="blocks/header :: header"></header>
 <body>
-
-
     <!--<label for="myfile" class="label">Выберите файлы</label>-->
     <!--<input type="file" class="my" id="myfile" name="myfile" multiple>-->
-
 <main>
     <center>
-
-
-
         <p>
             <form action="#" id="myform" enctype="multipart/form-data">
                 <label for="capture" class="label">Add music</label>
-
                 <input type="file"
                        id="capture"
                        accept="audio/*"
                        capture
                        multiple />
-
-                <br/>
-
-<!--                <input type="submit" value="Process" />-->
             </form>
         </p>
-
         <p>
             <audio src="" id="audio" controls></audio>
         </p>
-
-
-
-
+        <p>
+            <audio src="../Baker_-_mindset.mp3" controls loop></audio>
+        </p>
+        <p>
+            <audio src="../DCLXVI - PARADOX.mp3" controls></audio>
+        </p>
     </center>
 </main>
-
 <script src="js/script.js"></script>
 <script>
 <!--    $('.my').change(function() {-->
@@ -63,19 +47,12 @@
 
             input.addEventListener('change', (ev)=>{
                 console.dir( input.files[0] );
-
                 if(input.files[0].type.indexOf("audio/") > -1 ){
                     let audio = document.getElementById('audio');
                     audio.src = window.URL.createObjectURL(input.files[0]);
                 }
-
-
-
             })
-
         })
-
-
 </script>
 </body>
 </html>

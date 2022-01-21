@@ -18,6 +18,10 @@ public class MainController {
 
 
 
+
+
+
+
   //  public void example() {
   //      String[] myString = new String[]{"раз", "два", "три", "четыре", "пять"};
   //      int n = (int)Math.floor(Math.random() * myString.length);
