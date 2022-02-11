@@ -11,9 +11,9 @@ public class MainController {
 
 
     @GetMapping("/")
-    public String homePage(Model model) {
+    public String videoGallery(Model model) {
         model.addAttribute("title", "have we go again");
-        return "homePage";
+        return "VideoGallery";
     }
 
 
