@@ -12,8 +12,8 @@ public class MainController {
 
     @GetMapping("/")
     public String videoGallery(Model model) {
-        model.addAttribute("title", "have we go again");
-        return "VideoGallery";
+        model.addAttribute("title", "YouTube");
+        return "video-gallery";
     }
 
 
